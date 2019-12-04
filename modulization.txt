@@ -1,0 +1,27 @@
+Part 1:
+
+Although this is about modulization, it's good to know how to start a new project.
+-	Create a project directory; i.e., mkdir project_name
+-	CD into new project directory.
+-	Open terminal shell & change directory into new project directory.
+-	type:  npm init -y
+-	Within new shell type: sudo mongod
+-	Within new shell type: mongo
+-	Within new shell type: npm init express ejs mongoose --save
+
+Part 2:
+
+-	Create a Views folder.
+-	Create a Server folder
+	-	Create subfolders named controllers, models, utils.
+
+-	Models Folder: This folder will contain all of the items that would contain attributes.
+	This should remind you of a python models folder.
+
+
+Part 4:
+
+The final step is to start your server and access your project through the browser.
+-	Within terminal, change directory into your new project.
+-	Type: nodemon server.js
+-	Access your application through the browser; i.e., http://localhost.8000

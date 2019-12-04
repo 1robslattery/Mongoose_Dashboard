@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+<div class="text-center">
+    <h1>Mongoose or Mongeese??</h1>
+	<p><img src="zmongeese1.png" alt="Where's the image?"></p>
+	<h2>Mongoose Types</h2>
+    <p><a href="/mongoosetype/new">Create New Mongoose</a></p>
+    <table border=1 class="tabletable-hover mx-auto w-auto">
+        <tr>
+            <th>Species</th>
+            <th>Color</th>
+            <th>Age</th>
+            <th>Edit</th>
+        </tr>
+        <% for(let i=0; i<mongoosetypes.length; i++) { %>
+            <tr>
+                <td><%= mongoosetypes[i].species %></td>
+                <td><%= mongoosetypes[i].color %></td>
+                <td><%= mongoosetypes[i].age %></td>
+                <td><a href="/mongoosetype/<%= mongoosetypes[i]._id %>">Edit</a></td>
+            </tr>
+        <% } %>
+    </table>
+</div>
+</body>
+</html>
