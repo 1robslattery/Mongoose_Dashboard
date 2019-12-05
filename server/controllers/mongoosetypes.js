@@ -35,6 +35,14 @@ class MongooseController {
             .catch(err => res.json(err));
     }
 
+    delete(req, res) {
+        let _id = req.params._id;
+        Mongoosetype.findByIdAndRemove(req.params._id)
+            .exec()
+            .then( () => res.redirect("/"))
+            .catch(err => res.json(err));
+    }
+
 }
 
 module.exports = new MongooseController();

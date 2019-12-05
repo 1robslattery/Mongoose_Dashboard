@@ -14,12 +14,13 @@
 	<p><img src="zmongeese1.png" alt="Where's the image?"></p>
 	<h2>Mongoose Types</h2>
     <p><a href="/mongoosetype/new">Create New Mongoose</a></p>
-    <table border=1 class="tabletable-hover mx-auto w-auto">
+    <table border=1 class="text-left table-hover mx-auto w-auto">
         <tr>
             <th>Species</th>
             <th>Color</th>
             <th>Age</th>
             <th>Edit</th>
+            <th>Delete</th>
         </tr>
         <% for(let i=0; i<mongoosetypes.length; i++) { %>
             <tr>
@@ -27,6 +28,7 @@
                 <td><%= mongoosetypes[i].color %></td>
                 <td><%= mongoosetypes[i].age %></td>
                 <td><a href="/mongoosetype/<%= mongoosetypes[i]._id %>">Edit</a></td>
+                <td><a href="/mongoosetype/delete/<%= mongoosetypes[i]._id %>">Delete</a></td>
             </tr>
         <% } %>
     </table>

@@ -11,4 +11,5 @@ module.exports = function(app) {
     app.post("/mongoosetype", Mongoosetypes.create);
     app.get("/mongoosetype/:_id", Mongoosetypes.edit);
     app.post("/mongoosetype/:_id", Mongoosetypes.update);
+    app.get("/mongoosetype/delete/:_id", Mongoosetypes.delete);
 }
